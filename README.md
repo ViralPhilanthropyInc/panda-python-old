@@ -36,7 +36,7 @@ pandaecs.StripeCharge.create(
   amount=400,
   donation_amount=100,
   receipt_email=thedonator@email.com,
-  destination="12-3456789", # Optional
+  destination_ein="12-3456789", # Optional
   currency="usd",
   source="tok_18An5IGxtonQ6vBUBnw2t7LQ", # still the same token from Stripe.js
   description="Charge for test@example.com"
