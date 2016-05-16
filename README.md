@@ -38,7 +38,7 @@ pandaecs.StripeCharge.create(
   receipt_email=thedonator@email.com,
   destination="12-3456789", # Optional
   currency="usd",
-  source="tok_18An5IGxtonQ6vBUBnw2t7LQ", # still the same Stripe.js-generated token
+  source="tok_18An5IGxtonQ6vBUBnw2t7LQ", # still the same token from Stripe.js
   description="Charge for test@example.com"
 )
 ```
