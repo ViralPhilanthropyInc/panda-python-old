@@ -17,7 +17,7 @@ os.chdir(os.path.abspath(path))
 
 # Don't import panda module here, since deps may not be installed
 sys.path.insert(0, (os.path.dirname(__file__)))
-from version import VERSION
+from pandaecs.version import VERSION
 
 setup(
     name='pandapay',
