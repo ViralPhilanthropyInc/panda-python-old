@@ -43,5 +43,5 @@ pandaecs.StripeCharge.create(
 )
 ```
 
-The PandaPay API takes this charge, relays it to Stripe on your behalf using the OAuth token obtained via Stripe Connect, less the donation amount (which will show up in Stripe as a "Panda Fee")
+The PandaPay API takes this charge, relays it to Stripe on your behalf using the OAuth token obtained via Stripe Connect, less the donation amount (which will show up in Stripe as a "Panda Fee").  This also works with the standard Stripe **customer** parameter instead of a **source**.
 
