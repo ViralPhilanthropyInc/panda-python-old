@@ -36,12 +36,12 @@ pandaecs.StripeCharge.create(
   amount=400,
   donation_amount=100,
   receipt_email=thedonator@email.com,
-  destination="12-3456789", # Optional
+  destination_ein="12-3456789", # Optional
   currency="usd",
   source="tok_18An5IGxtonQ6vBUBnw2t7LQ", # still the same token from Stripe.js
   description="Charge for test@example.com"
 )
 ```
 
-The PandaPay API takes this charge, relays it to Stripe on your behalf using the OAuth token obtained via Stripe Connect, less the donation amount (which will show up in Stripe as a "Panda Fee")
+The PandaPay API takes this charge, relays it to Stripe on your behalf using the OAuth token obtained via Stripe Connect, less the donation amount (which will show up in Stripe as a "Panda Fee").  This also works with the standard Stripe **customer** parameter instead of a **source**.
 
