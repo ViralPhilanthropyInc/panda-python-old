@@ -56,8 +56,6 @@ class StripeCharge(Charge):
 
         response, returned_api_key = requestor.request('post', url, params_to_use, headers)
 
-        import pdb; pdb.set_trace()
-
         return StripeCharge.construct_from(response, api_key_to_use, stripe_account)
 
     @classmethod
